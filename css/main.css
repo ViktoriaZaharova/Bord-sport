@@ -1,0 +1,8 @@
+.home {
+  padding: 460px 0 120px;
+  background: url("../img/home-bg.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}

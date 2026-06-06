@@ -1,3 +1,48 @@
-@import "fonts"
 @import "vars"
 
+.news-ticker
+    width: 100%
+    overflow: hidden
+    white-space: nowrap
+    background: #fff
+    padding: 20px 0
+
+    &__track
+        display: inline-flex
+        align-items: center
+        width: max-content
+        animation: ticker 20s linear infinite
+
+        span
+            flex-shrink: 0
+            color: $accent
+            font-size: 26px
+            font-weight: 700
+            text-transform: uppercase
+            display: flex
+            align-items: center
+            &:after
+                content: ''
+                margin: 0 20px
+                width: 12px
+                height: 23px
+                background: url('../img/decor-icon.svg') no-repeat center
+
+    &:hover
+        .news-ticker__track
+            animation-play-state: paused
+
+@keyframes ticker
+    from
+        transform: translateX(0)
+
+    to
+        transform: translateX(-50%)
+
+
+header
+    position: absolute
+    z-index: 10
+    top: 0
+    left: 0
+    width: 100%
