@@ -16,3 +16,11 @@ $('.go_to').on('click', function(e) {
     }, 800);
 });
 
+// btn scroll top
+$('.btn-scroll-top').on('click', function(e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: 0
+    }, 800);
+});

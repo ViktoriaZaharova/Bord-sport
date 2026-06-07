@@ -15,8 +15,8 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  -webkit-animation: ticker 20s linear infinite;
-          animation: ticker 20s linear infinite;
+  -webkit-animation: ticker 30s linear infinite;
+          animation: ticker 30s linear infinite;
 }
 .news-ticker__track span {
   -ms-flex-negative: 0;
@@ -71,4 +71,64 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.btn-phone-call {
+  width: 62px;
+  min-width: 62px;
+  padding: 10px;
+  margin: 0 10px 0 0;
+}
+.btn-phone-call svg {
+  width: 20px;
+  height: 20px;
+}
+
+.schedule {
+  margin: 0 70px 0 auto;
+}
+
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.phone:hover {
+  color: #E52322;
+}
+
+.nav-menu {
+  margin: 0 auto;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px;
+}
+.menu li a {
+  color: #fff;
+}
+.menu li a:hover {
+  color: #E52322;
 }

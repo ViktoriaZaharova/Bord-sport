@@ -43,8 +43,12 @@ body
   line-height: normal
   font-family: $default-font
   font-weight: normal
+  text-transform: uppercase
   background: #fff
   color: #0E1116
+
+html, body
+  overflow-x: hidden  
 
 img
   display: block
@@ -126,12 +130,43 @@ button, .btn
   align-items: center
   justify-content: center
   text-align: center
-  padding: 10px 45px
-  font-size: 16px
-  font-weight: bold
-  height: 46px
-  border-radius: 10px
+  padding: 10px 40px
+  font-size: 18px
+  font-weight: 800
+  text-transform: uppercase
+  height: 62px
+  border-radius: 0
   transition: 0.3s ease
+
+.btn-md
+  font-size: 20px
+  height: 66px  
+
+.btn-red
+  background: $accent
+  color: #fff
+  fill: #fff
+  &:hover, &:focus
+    background: #C71D1C
+    color: #fff
+    fill: #fff
+
+.btn-white
+  background: #fff
+  color: $accent
+  fill: $accent
+  &:hover, &:focus
+    background: $accent
+    color: #fff
+    fill: #fff
+
+.btn-group
+  .btn
+    flex: none
+    width: fit-content   
+    margin: 0 16px 0 0
+    &:last-child
+      margin: 0
 
 .svg-icon
   display: inline-block
@@ -169,9 +204,18 @@ ul, ol
 
 h1, .h1
   font-size: 120px
-  text-transform: uppercase
-  font-weight: 900  
-  
+  font-weight: 900
+  margin: 0 0 30px
+  line-height: 95%
+
+h2, .h2
+  font-size: 48px
+  font-weight: 800
+  margin: 0 0 20px
+  line-height: 110%
+
+
+
 
 // slick  
 .slick-slider

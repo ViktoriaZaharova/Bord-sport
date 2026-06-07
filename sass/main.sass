@@ -7,6 +7,48 @@
     position: relative
     z-index: 1
     color: #fff
-    
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: radial-gradient(53.25% 50.14% at 50% 47.09%, rgba(0, 0, 0, 0) 0%, rgba(0, 79, 159, 0.4) 100%)
+        background-blend-mode: multiply
+        z-index: -1
+    .btn-group
+        width: 100%
+        margin: 0 0 0 auto   
+        justify-content: flex-end 
 
-    
+.text-hightlights
+    font-size: 26px
+    font-weight: 700
+    line-height: 90%
+    p
+        display: inline
+        line-height: 1.8
+        background: #004F9F
+        color: #fff
+        padding: 9px 12px
+        box-decoration-break: clone
+        -webkit-box-decoration-break: clone
+
+// about section
+.about-section1
+    margin: 40px 0 0
+    color: #fff
+
+.about-section-wrapper
+    background: url('../img/about-bg.png') no-repeat center
+    background-size: cover
+    padding: 40px
+    min-height: 920px
+
+.subtitle
+    padding: 12px
+    background: #004F9F
+    font-size: 18px
+    font-weight: 700
+    width: fit-content
