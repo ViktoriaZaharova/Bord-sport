@@ -19,21 +19,38 @@
         z-index: -1
     .btn-group
         width: 100%
-        margin: 0 0 0 auto   
-        justify-content: flex-end 
+        margin: 0 0 0 auto
+        justify-content: flex-end
 
 .text-hightlights
     font-size: 26px
     font-weight: 700
     line-height: 90%
     p
-        display: inline
-        line-height: 1.8
+        display: block
+        line-height: 120%
         background: #004F9F
         color: #fff
         padding: 9px 12px
         box-decoration-break: clone
         -webkit-box-decoration-break: clone
+        margin: 0 0 -15px
+        width: fit-content
+        &:last-child
+            margin: 0
+    h2
+        span
+            display: block
+            line-height: 110%
+            background: #fff
+            color: $blue
+            padding: 9px 12px
+            box-decoration-break: clone
+            -webkit-box-decoration-break: clone
+            margin: 0 0 -15px
+            width: fit-content
+            &:last-child
+                margin: 0
 
 // about section
 .about-section1
@@ -52,3 +69,39 @@
     font-size: 18px
     font-weight: 700
     width: fit-content
+
+.about-section__img
+    height: 920px
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover       
+
+.about-section__content
+    padding: 40px
+    background: $blue
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    color: #fff
+
+.about-item
+    margin: 0 0 40px
+    &:last-child
+        margin: 0
+    .box-text
+        font-family: $font
+        font-size: 20px
+        font-weight: 500
+        line-height: 140%
+        text-transform: none
+    .text-hightlights
+        margin: 0 0 20px
+        p
+            color: $blue
+            background: #fff
+
+
+    
