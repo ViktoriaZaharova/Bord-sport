@@ -49,8 +49,6 @@
 .text-hightlights h2 span {
   display: block;
   line-height: 110%;
-  background: #fff;
-  color: #004F9F;
   padding: 9px 12px;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
@@ -61,6 +59,15 @@
 }
 .text-hightlights h2 span:last-child {
   margin: 0;
+}
+
+.text-hightlights2 p {
+  color: #004F9F;
+  background: #fff;
+}
+.text-hightlights2 h2 span, .text-hightlights2 .h2 span {
+  color: #004F9F;
+  background: #fff;
 }
 
 .about-section1 {
@@ -119,17 +126,11 @@
 .about-item:last-child {
   margin: 0;
 }
-.about-item .box-text {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 140%;
-  text-transform: none;
-}
 .about-item .text-hightlights {
   margin: 0 0 20px;
 }
-.about-item .text-hightlights p {
-  color: #004F9F;
-  background: #fff;
+
+.about-image {
+  position: relative;
+  z-index: 1;
 }
