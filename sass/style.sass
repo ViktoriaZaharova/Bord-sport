@@ -223,8 +223,14 @@ h1, .h1
 h2, .h2
   font-size: 48px
   font-weight: 800
-  margin: 0 0 20px
+  margin: 0 0 40px
   line-height: 110%
+  color: $blue
+
+h4, .h4
+  font-size: 26px
+  font-weight: 800
+  line-height: 120%
 
 .box-text
   font-family: $font
@@ -232,6 +238,16 @@ h2, .h2
   font-weight: 500
   line-height: 140%
   text-transform: none
+
+.accordion-button
+  flex: none
+  flex-wrap: wrap
+  width: 100%
+  padding: 20px 
+  background: transparent  
+
+.accordion-button:not(.collapsed)::after
+  transform: none
 
 // slick  
 .slick-slider
