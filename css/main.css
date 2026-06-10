@@ -46,6 +46,9 @@
 .text-hightlights p:last-child, .text-hightlights a:last-child {
   margin: 0;
 }
+.text-hightlights h2 {
+  color: #fff;
+}
 .text-hightlights h2 span {
   display: block;
   line-height: 110%;
@@ -235,6 +238,17 @@
   background: transparent;
   color: inherit;
 }
+.faq-accordion .accordion-button:not(.collapsed) .faq-number {
+  background: #004F9F;
+  color: #fff;
+}
+.faq-accordion .accordion-button:not(.collapsed) .faq-number .h2 {
+  color: #fff;
+}
+.faq-accordion .accordion-button:not(.collapsed) .faq-question span {
+  background: #004F9F;
+  color: #fff;
+}
 .faq-accordion .accordion-body {
   padding: 0 40px 40px;
   font-family: "Inter";
@@ -262,6 +276,8 @@
           justify-content: center;
   background: #fff;
   color: #004F9F;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .faq-number span {
   padding: 0 8.5px;
@@ -272,11 +288,14 @@
   margin: 0;
   display: block;
   line-height: normal;
+  text-transform: uppercase;
 }
 .faq-question span {
   display: inline-block;
   padding: 10px;
   background: #fff;
-  color: #0053A6;
+  color: #004F9F;
   margin: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }

@@ -39,6 +39,7 @@
         &:last-child
             margin: 0
     h2
+        color: #fff
         span
             display: block
             line-height: 110%
@@ -181,14 +182,21 @@
             width: 20px
             height: 20px
             background-size: contain
-
         &:not(.collapsed)
             background: transparent
             color: inherit
+            .faq-number
+                background: $blue
+                color: #fff
+                .h2
+                    color: #fff
+            .faq-question
+                span
+                    background: $blue
+                    color: #fff
 
     .accordion-body
-        padding: 0 40px 40px 
-
+        padding: 0 40px 40px
         font-family: 'Inter'
         font-size: 20px
         line-height: 140%
@@ -201,24 +209,25 @@
                     margin: 0
 
 .faq-number
-
-        display: inline-flex
-        align-items: center
-        justify-content: center
-
-        background: #fff
-        color: $blue
-        span
-            padding: 0 8.5px
-            margin: 0
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    background: #fff
+    color: $blue
+    transition: .3s ease
+    span
+        padding: 0 8.5px
+        margin: 0
 
 .faq-question
     margin: 0
     display: block
     line-height: normal
+    text-transform: uppercase
     span
         display: inline-block
-        padding: 10px 
+        padding: 10px
         background: #fff
-        color: #0053A6
+        color: $blue
         margin: 0
+        transition: .3s ease
