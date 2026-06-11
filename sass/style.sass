@@ -188,7 +188,7 @@ ul, ol
   list-style-type: disc
 
 .container
-  max-width: 1900px
+  max-width: 1920px
   padding: 0 40px
 
 .row
@@ -202,8 +202,11 @@ ul, ol
 .mb-20
   margin-bottom: 20px
 
+.mb-60
+  margin-bottom: 60px
+
 .mb-120
-  margin-bottom: 120px  
+  margin-bottom: 120px
 
 .mt-40
   margin-top: 40px
@@ -239,12 +242,17 @@ h4, .h4
   line-height: 140%
   text-transform: none
 
+.link-red
+  color: $accent
+  &:hover
+    color: $blue
+
 .accordion-button
   flex: none
   flex-wrap: wrap
   width: 100%
-  padding: 20px 
-  background: transparent  
+  padding: 20px
+  background: transparent
 
 .accordion-button:not(.collapsed)::after
   transform: none
@@ -255,6 +263,27 @@ h4, .h4
 
 .slick-slide
   outline: none
+
+.slick-arrow
+  width: 62px
+  height: 62px
+  border: none
+  background: #F4F5F7
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $blue
+  fill: $blue
+  transition: .3s
+  svg
+    width: 24px
+    height: 24px
+  &:hover
+    background: $blue
+    color: #fff
+    fill: #fff
+  // &.slick-disabled
+  //   pointer-events: none
 
 //checkbox my
 .label-checkbox

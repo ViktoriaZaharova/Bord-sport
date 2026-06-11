@@ -38,7 +38,7 @@
   padding: 9px 12px;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  margin: 0 0 -15px;
+  margin: 0 0 -11px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -233,10 +233,16 @@
   width: 20px;
   height: 20px;
   background-size: contain;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .faq-accordion .accordion-button:not(.collapsed) {
   background: transparent;
   color: inherit;
+}
+.faq-accordion .accordion-button:not(.collapsed):after {
+  -webkit-transform: none;
+          transform: none;
 }
 .faq-accordion .accordion-button:not(.collapsed) .faq-number {
   background: #004F9F;
@@ -298,4 +304,117 @@
   margin: 0;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+.certificate-wrapper {
+  padding: 52px 40px 40px;
+  background: #004F9F;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.certificate-wrapper h2 {
+  margin: -25px auto 40px;
+}
+
+.certificate-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.events-slider {
+  padding-bottom: 62px;
+  height: 100%;
+}
+.events-slider .slick-arrow {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+}
+.events-slider .slick-list {
+  margin: 0 -10px;
+}
+.events-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.events-slider .slick-slide {
+  padding: 0 10px;
+  height: inherit;
+}
+.events-slider .slick-slide > div {
+  height: 100%;
+}
+.events-slider .slide {
+  height: auto;
+}
+
+.event-image {
+  height: 600px;
+  width: 100%;
+}
+.event-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.event-card {
+  width: 100%;
+  height: 100%;
+  background: #F4F5F7;
+  padding: 40px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.event-card__date {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5A6270;
+  margin: 0 0 10px;
+}
+.event-card .box-text {
+  margin: 20px 0 auto;
+  color: #5A6270;
+}
+.event-card__link {
+  margin: 40px 0 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.events-prev {
+  right: 71px;
+}
+
+.events-next {
+  right: 0;
 }
