@@ -25,6 +25,88 @@ $('.btn-scroll-top').on('click', function (e) {
     }, 800);
 });
 
+// $('.gallery-slider-max').slick({
+//     slidesToShow: 1,
+//     infinite: true,
+//     speed: 800,
+//     arrows: false,
+//     fade: true,
+//     asNavFor: ".gallery-slider-preview",
+// })
+
+// $('.gallery-slider-preview').slick({
+//     slidesToShow: 1,
+//     infinite: true,
+//     speed: 800,
+//     arrows: true,
+//     fade: true,
+//     focusOnSelect: true,
+//     asNavFor: ".gallery-slider-max",
+//     prevArrow: `
+//         <button type="button" class="slick-arrow gallery-slider-prev">
+//             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+// <path d="M6 10L14 4L14 16L6 10Z"/>
+// </svg>
+
+//         </button>
+//     `,
+
+//     nextArrow: `
+//         <button type="button" class="slick-arrow gallery-slider-next">
+//             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+// <path d="M18 10L10 4L10 16L18 10Z"/>
+// </svg>
+
+//         </button>
+//     `,
+// })
+
+const galleryImages = [];
+
+$('.gallery-slider .slide img').each(function () {
+    galleryImages.push($(this).attr('src'));
+});
+
+$('.gallery-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    speed: 800,
+    arrows: true,
+    fade: true,
+    prevArrow: $('.gallery-slider-prev'),
+    nextArrow: $('.gallery-slider-next')
+});
+
+function updatePreview(currentIndex, totalSlides) {
+
+    let nextIndex = currentIndex + 1;
+
+    if (nextIndex >= totalSlides) {
+        nextIndex = 0;
+    }
+
+    const nextImage = galleryImages[nextIndex];
+
+    $('.gallery-preview img').fadeOut(200, function() {
+
+        $(this)
+            .attr('src', nextImage)
+            .fadeIn(300);
+
+    });
+
+    $('.gallery-preview a').attr('href', nextImage);
+}
+
+updatePreview(0, galleryImages.length);
+
+$('.gallery-slider').on('beforeChange', function (event, slick, currentSlide) {
+    updatePreview(
+        currentSlide,
+        slick.slideCount
+    );
+});
 
 $('.events-slider').slick({
     slidesToShow: 2,
@@ -60,4 +142,12 @@ $('.events-slider').slick({
             }
         }
     ]
+});
+
+Fancybox.bind("[data-fancybox='gallery']", {
+    // Your custom v5 options here
+    Infinite: true,
+    Images: {
+        protected: true
+    }
 });
