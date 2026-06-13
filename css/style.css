@@ -390,10 +390,23 @@ h2, .h2 {
   color: #004F9F;
 }
 
+h3, .h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 40px;
+  line-height: 110%;
+}
+
 h4, .h4 {
   font-size: 26px;
   font-weight: 800;
   line-height: 120%;
+}
+
+.text {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 150%;
 }
 
 .box-text {
@@ -409,6 +422,14 @@ h4, .h4 {
 }
 .link-red:hover {
   color: #004F9F;
+}
+
+.color-blue {
+  color: #004F9F;
+}
+
+.color-white {
+  color: #fff;
 }
 
 .accordion-button {
