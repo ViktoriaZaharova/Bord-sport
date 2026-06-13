@@ -493,3 +493,31 @@
 .forbidden {
   margin: 120px 0 110px;
 }
+.forbidden .text-hightlights {
+  max-width: 582px;
+}
+
+.forbidden-card {
+  width: 100%;
+  height: 100%;
+  background: #F4F5F7;
+  padding: 40px;
+}
+.forbidden-card__icon {
+  width: 76px;
+  height: 76px;
+  background: white;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.forbidden-card__text {
+  margin: 48px 0 0;
+}
