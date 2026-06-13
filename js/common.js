@@ -25,41 +25,6 @@ $('.btn-scroll-top').on('click', function (e) {
     }, 800);
 });
 
-// $('.gallery-slider-max').slick({
-//     slidesToShow: 1,
-//     infinite: true,
-//     speed: 800,
-//     arrows: false,
-//     fade: true,
-//     asNavFor: ".gallery-slider-preview",
-// })
-
-// $('.gallery-slider-preview').slick({
-//     slidesToShow: 1,
-//     infinite: true,
-//     speed: 800,
-//     arrows: true,
-//     fade: true,
-//     focusOnSelect: true,
-//     asNavFor: ".gallery-slider-max",
-//     prevArrow: `
-//         <button type="button" class="slick-arrow gallery-slider-prev">
-//             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-// <path d="M6 10L14 4L14 16L6 10Z"/>
-// </svg>
-
-//         </button>
-//     `,
-
-//     nextArrow: `
-//         <button type="button" class="slick-arrow gallery-slider-next">
-//             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-// <path d="M18 10L10 4L10 16L18 10Z"/>
-// </svg>
-
-//         </button>
-//     `,
-// })
 
 const galleryImages = [];
 

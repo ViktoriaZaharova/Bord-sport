@@ -469,6 +469,27 @@
      object-fit: cover;
 }
 
+.rules-accordion .accordion-item {
+  background: transparent;
+  padding: 0;
+}
+.rules-accordion .accordion-button {
+  padding: 0 0 20px;
+  border-color: transparent;
+  background: transparent;
+}
+.rules-accordion .accordion-button.collapsed {
+  border-bottom: 1px solid #E8EAEE;
+}
+.rules-accordion .accordion-body {
+  padding: 20px 0;
+  color: #0E1116;
+  border-bottom: 1px solid #004F9F;
+}
+.rules-accordion .faq-question span {
+  color: #0E1116;
+}
+
 .forbidden {
   margin: 120px 0 110px;
 }
