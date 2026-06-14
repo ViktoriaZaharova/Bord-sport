@@ -13,6 +13,9 @@
   .btn-phone-call {
     padding: 10px;
   }
+  .btn-scroll-top {
+    padding: 10px;
+  }
 }
 @media only screen and (max-width: 1570px) {
   .nav-menu {
@@ -57,6 +60,9 @@
         -ms-flex: 1;
             flex: 1;
   }
+  .nav-menu .phone {
+    margin: 0;
+  }
   .menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -96,6 +102,7 @@
   }
   h2, .h2 {
     font-size: 38px;
+    margin: 0 0 20px;
   }
   .text-hightlights {
     font-size: 20px;
@@ -145,6 +152,27 @@
     bottom: 24px;
     left: 24px;
   }
+  .consultation-wrapper .h4 {
+    margin: 0 0 20px;
+  }
+  .forbidden {
+    margin: 60px 0;
+  }
+  .forbidden h2, .forbidden .h2 {
+    margin: 0 0 20px;
+  }
+  .event-card {
+    padding: 24px;
+  }
+  .list-social {
+    margin: 0 auto;
+  }
+  footer {
+    padding: 10px 0 24px;
+  }
+  .footer-row {
+    padding: 24px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .container {
@@ -158,11 +186,17 @@
     font-size: 24px;
     margin: 0 0 20px;
   }
+  h4, .h4 {
+    font-size: 20px;
+  }
   .mb-50 {
     margin-bottom: 20px;
   }
   .mt-120 {
     margin-top: 60px;
+  }
+  .mb-120 {
+    margin-bottom: 60px;
   }
   .about-section1 {
     margin: 24px 0 0;
@@ -206,6 +240,27 @@
   .list-information span {
     width: 50%;
   }
+  .forbidden-card {
+    padding: 24px;
+  }
+  .forbidden-card__text {
+    margin: 20px 0 0;
+  }
+  .faq-accordion .accordion-body {
+    font-size: 16px;
+  }
+  .gallery-nav {
+    margin: 20px 0 0;
+  }
+  .event-card__date {
+    font-size: 16px;
+  }
+  .faq-number .h2 {
+    font-size: 24px;
+  }
+  .map {
+    margin: 10px 0 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   .list-information {
@@ -226,11 +281,125 @@
   .mb-40 {
     margin-bottom: 20px;
   }
+  .mb-60 {
+    margin-bottom: 40px;
+  }
+  header .logo {
+    margin: 0 auto 0 0;
+  }
+  header .phone, header .schedule {
+    display: none;
+  }
+  .nav-menu .phone, .nav-menu .schedule {
+    display: block;
+  }
+  .consultation {
+    margin: 24px 0 0;
+  }
+  .consultation-wrapper {
+    padding: 80px 24px;
+  }
+  .text-hightlights h2, .text-hightlights .h2 {
+    padding: 12px 10px;
+    background: #fff;
+  }
+  .text-hightlights h2 span, .text-hightlights .h2 span {
+    padding: 0;
+    display: inline;
+    margin: 0;
+    background: transparent;
+  }
+  .certificate-wrapper {
+    padding: 16px 24px 24px;
+  }
+  .certificate-wrapper .text-hightlights h2, .certificate-wrapper .text-hightlights .h2 {
+    padding: 0;
+    background: transparent;
+    line-height: 130%;
+  }
+  .certificate-wrapper .text-hightlights h2 span, .certificate-wrapper .text-hightlights .h2 span {
+    background: #fff;
+    padding: 12px 10px;
+  }
+  .news h2 br {
+    display: none;
+  }
+  .contacts .text-hightlights h2, .contacts .text-hightlights .h2 {
+    padding: 0;
+    background: transparent;
+    line-height: 130%;
+  }
+  .contacts .text-hightlights h2 span, .contacts .text-hightlights .h2 span {
+    background: #fff;
+    padding: 12px 10px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .riders-wrapper {
     min-height: auto;
     background: url("../img/rider-img-mobile.png") no-repeat center;
     background-size: cover;
+  }
+  .logo {
+    max-width: 80px;
+  }
+  .consultation-wrapper::before, .consultation-wrapper:after {
+    display: none;
+  }
+  .faq {
+    margin: 0 0 10px;
+  }
+  .faq h2 br {
+    display: none;
+  }
+  .faq-accordion .accordion-item {
+    margin: 0 0 10px;
+  }
+  .faq-number .h2 {
+    font-size: 14px;
+  }
+  .faq-number span {
+    padding: 0 6px;
+  }
+  .faq-accordion .accordion-button {
+    padding-right: 50px;
+  }
+  .faq-accordion .accordion-button::after {
+    top: 15px;
+  }
+  .faq-accordion .accordion-body {
+    padding-bottom: 20px;
+  }
+  .map {
+    height: 320px;
+    overflow: hidden;
+  }
+  .map img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .list-social {
+    margin: 0 auto 0 0;
+  }
+  .copyright {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 20px 0 0;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .nav-menu__footer {
+    font-size: 14px;
+    margin: 40px 0 0;
+  }
+  .home .btn-group {
+    margin: 20px 0 0;
+  }
+  .phone {
+    font-size: 18px;
   }
 }

@@ -160,6 +160,10 @@
         background-blend-mode: multiply
         z-index: -1
 
+.map
+    img
+        width: 100%
+
 // faq
 .faq-accordion
     .accordion-item
@@ -204,7 +208,7 @@
                     color: #fff
 
     .accordion-body
-        padding: 0 40px 40px
+        padding: 0 20px 40px
         font-family: 'Inter'
         font-size: 20px
         line-height: 140%
@@ -232,6 +236,8 @@
     display: block
     line-height: normal
     text-transform: uppercase
+    .h4
+        font-weight: bold
     span
         display: inline-block
         padding: 10px
@@ -256,7 +262,7 @@
     justify-content: center
 
 .events-slider
-    padding-bottom: 62px
+    padding-bottom: 82px
     height: 100%
     .slick-arrow
         position: absolute
@@ -357,9 +363,11 @@
         background: transparent
         padding: 0
     .accordion-button
-        padding: 0 0 20px
+        padding: 0 20px 20px 0
         border-color: transparent
         background: transparent
+        &:after
+            right: 0
         &.collapsed
             border-bottom: 1px solid #E8EAEE
     .accordion-body
