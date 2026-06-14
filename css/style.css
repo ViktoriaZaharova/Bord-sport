@@ -355,6 +355,14 @@ ul, ol {
   margin-bottom: 20px;
 }
 
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
 .mb-60 {
   margin-bottom: 60px;
 }
@@ -430,6 +438,28 @@ h4, .h4 {
 
 .color-white {
   color: #fff;
+}
+
+.list-decor li {
+  margin: 0 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.list-decor li::before {
+  content: "";
+  width: 8px;
+  height: 21px;
+  min-width: 8px;
+  margin: 2px 10px 0 0;
+  background: url("../img/decor-icon.svg") no-repeat center;
+  background-size: 100%;
+}
+.list-decor li:last-child {
+  margin: 0;
 }
 
 .accordion-button {
