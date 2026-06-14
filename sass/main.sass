@@ -500,13 +500,29 @@
     &__body
         width: 100%
         padding: 40px
+    &__img
+        position: relative
+        z-index: 1
+        width: 100%
+        height: 100%
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &-text
+            position: absolute
+            z-index: 1
+            padding: 40px
+            top: 0
+            left: 0
+            .text-hightlights
+                font-size: 20px
 
 .riders-card-column
     width: 100%
     height: 100%
     display: flex
     flex-direction: column
-    
 
 .list-information
     font-size: 20px
@@ -524,7 +540,6 @@
             font-family: $font
             color: #5A6270
             text-transform: none
-
 
 .list-schedule-line
     width: 100%
@@ -545,3 +560,19 @@
         margin: 0 0 4px
         &:last-child
             margin: 0
+
+.scheme-image
+    width: 100%
+    svg
+        width: 100%
+
+.scheme-marker
+    transition: .3s ease
+    .scheme-marker-bg, .scheme-marker-number
+        transition: .3s ease
+    &.active
+        .scheme-marker-bg
+            fill: #E52322
+
+        .scheme-marker-number
+            fill: #fff

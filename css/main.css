@@ -678,6 +678,28 @@
   width: 100%;
   padding: 40px;
 }
+.riders-card__img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.riders-card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.riders-card__img-text {
+  position: absolute;
+  z-index: 1;
+  padding: 40px;
+  top: 0;
+  left: 0;
+}
+.riders-card__img-text .text-hightlights {
+  font-size: 20px;
+}
 
 .riders-card-column {
   width: 100%;
@@ -740,4 +762,26 @@
 }
 .list-schedule-line p:last-child {
   margin: 0;
+}
+
+.scheme-image {
+  width: 100%;
+}
+.scheme-image svg {
+  width: 100%;
+}
+
+.scheme-marker {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.scheme-marker .scheme-marker-bg, .scheme-marker .scheme-marker-number {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.scheme-marker.active .scheme-marker-bg {
+  fill: #E52322;
+}
+.scheme-marker.active .scheme-marker-number {
+  fill: #fff;
 }

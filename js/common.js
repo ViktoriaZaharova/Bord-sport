@@ -116,3 +116,31 @@ Fancybox.bind("[data-fancybox='gallery']", {
         protected: true
     }
 });
+
+function activateScheme(id) {
+
+    $('.scheme-marker').removeClass('active');
+    $('.scheme-info__item').removeClass('active');
+
+    $('.scheme-marker[data-id="' + id + '"]').addClass('active');
+    $('.scheme-info__item[data-id="' + id + '"]').addClass('active');
+}
+
+$(document).on('mouseenter', '.scheme-info__item', function() {
+
+    activateScheme($(this).data('id'));
+
+});
+
+$(document).on('mouseenter', '.scheme-marker', function() {
+
+    activateScheme($(this).data('id'));
+
+});
+
+$(document).on('mouseleave', '.scheme-info__item, .scheme-marker', function() {
+
+    $('.scheme-marker').removeClass('active');
+    $('.scheme-info__item').removeClass('active');
+
+});
