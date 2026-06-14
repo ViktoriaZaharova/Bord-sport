@@ -24,6 +24,8 @@
 </head>
 
 <body>
+  
+
   <div class="news-ticker">
     <div class="news-ticker__track">
       <span>21 апреля 2026 — Кольцо закрыто на «ТО»</span>
@@ -34,6 +36,7 @@
   </div>
 
   <main class="home">
+    <div class="overlay"></div>
     <header>
       <div class="container">
         <div class="row">
@@ -48,6 +51,15 @@
                 <li><a href="#faq" class="go_to">Вопросы и ответы</a></li>
                 <li><a href="#contacts" class="go_to">Контакты</a></li>
               </ul>
+              <div class="nav-menu__footer">
+                <div class="schedule">Ежедневно с 10:00 до 20:00</div>
+                <a href="tel:+79000000000" class="phone">+7 900 000 00 00</a>
+              </div>
+
+              <div class="btn-group">
+            <a href="#" class="btn btn-red btn-md" data-bs-toggle="modal" data-bs-target="#callbackModal">Записаться</a>
+            <a href="#about" class="btn btn-white go_to btn-md">О проекте</a>
+          </div>
             </nav>
 
             <div class="schedule">Ежедневно с 10:00 до 20:00</div>
@@ -57,9 +69,11 @@
                   <use xlink:href="img/sprite.svg#phone-icon"></use>
                 </svg></a>
 
-              <a href="#callbackModal" class="btn btn-red" data-bs-toggle="modal"
+              <a href="#callbackModal" class="btn btn-red btn-callback-header" data-bs-toggle="modal"
                 data-bs-target="#callbackModal">Обратный звонок</a>
             </div>
+
+            <a href="#" class="btn-burger"></a>
 
           </div>
         </div>
@@ -69,8 +83,8 @@
 
     <div class="container">
       <div class="row align-items-end">
-        <div class="col-12 col-lg-5">
-          <h1>Борд спорт
+        <div class="col-12 col-xl-6">
+          <h1>Борд спорт <br>
             вейк-парк</h1>
 
           <div class="text-hightlights">
@@ -79,7 +93,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-7">
+        <div class="col-12 col-xl-6">
           <div class="btn-group">
             <a href="#" class="btn btn-red btn-md" data-bs-toggle="modal" data-bs-target="#callbackModal">Записаться</a>
             <a href="#about" class="btn btn-white go_to btn-md">О проекте</a>
@@ -95,7 +109,7 @@
         <div class="col-12">
           <div class="about-section-wrapper">
             <div class="row">
-              <div class="col-12 col-xxl-2">
+              <div class="col-12 col-xxl-2 mb-40">
                 <div class="subtitle">О проекте</div>
               </div>
 
@@ -163,9 +177,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-lg-8 order-lg-1">
+        <div class="col-12 col-xl-8 order-xl-1">
           <div class="about-slider row">
-            <div class="col-12 col-lg-6 mb-20">
+            <div class="col-12 col-xl-6 mb-20">
               <div class="about-card">
                 <div class="about-card__icon"><img src="img/about-icon1.svg" alt=""></div>
                 <div class="about-card__text">
@@ -180,7 +194,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-6 mb-20">
+            <div class="col-12 col-xl-6 mb-20">
               <div class="about-card">
                 <div class="about-card__icon"><img src="img/about-icon2.svg" alt=""></div>
                 <div class="about-card__text">
@@ -194,7 +208,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-6 mb-20">
+            <div class="col-12 col-xl-6 mb-20">
               <div class="about-card">
                 <div class="about-card__icon"><img src="img/about-icon3.svg" alt=""></div>
                 <div class="about-card__text">
@@ -209,7 +223,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-6 mb-20">
+            <div class="col-12 col-xl-6 mb-20">
               <div class="about-card">
                 <div class="about-card__icon"><img src="img/about-icon4.svg" alt=""></div>
                 <div class="about-card__text">
@@ -224,7 +238,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-6 mb-20">
+            <div class="col-12 col-xl-6 mb-20">
               <div class="about-card">
                 <div class="about-card__icon"><img src="img/about-icon5.svg" alt=""></div>
                 <div class="about-card__text">
@@ -238,7 +252,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-6 mb-20">
+            <div class="col-12 col-xl-6 mb-20">
               <div class="about-card">
                 <div class="about-card__icon"><img src="img/about-icon6.svg" alt=""></div>
                 <div class="about-card__text">
@@ -252,7 +266,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-6 mb-20">
+            <div class="col-12 col-xl-6 mb-20">
               <div class="about-card">
                 <div class="about-card__icon"><img src="img/about-icon7.svg" alt=""></div>
                 <div class="about-card__text">
@@ -266,7 +280,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-6 mb-20">
+            <div class="col-12 col-xl-6 mb-20">
               <div class="about-card">
                 <div class="about-card__icon"><img src="img/about-icon8.svg" alt=""></div>
                 <div class="about-card__text">
@@ -282,7 +296,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-xl-4">
           <div class="about-image"><img src="img/about-img2.png" alt="">
             <div class="about-image__logo"><img src="img/logo-icon.svg" alt=""></div>
           </div>

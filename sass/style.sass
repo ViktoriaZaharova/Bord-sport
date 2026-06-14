@@ -46,7 +46,7 @@ body
   text-transform: uppercase
   background: #fff
   color: #0E1116
-
+  
 html, body
   overflow-x: hidden
 
@@ -167,6 +167,9 @@ button, .btn
     margin: 0 16px 0 0
     &:last-child
       margin: 0
+
+.btn-group>.btn-group:not(:first-child), .btn-group>:not(.btn-check:first-child)+.btn
+  margin: 0
 
 .svg-icon
   display: inline-block

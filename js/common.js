@@ -11,9 +11,13 @@ $('.go_to').on('click', function (e) {
 
     const target = $(this).attr('href');
 
+    if ($(window).width() < 1570) {
+        $('.btn-burger').trigger('click');
+    }
+
     $('html, body').animate({
         scrollTop: $(target).offset().top
-    }, 800);
+    }, 500);
 });
 
 // btn scroll top
@@ -53,7 +57,7 @@ function updatePreview(currentIndex, totalSlides) {
 
     const nextImage = galleryImages[nextIndex];
 
-    $('.gallery-preview img').fadeOut(200, function() {
+    $('.gallery-preview img').fadeOut(200, function () {
 
         $(this)
             .attr('src', nextImage)
@@ -126,21 +130,76 @@ function activateScheme(id) {
     $('.scheme-info__item[data-id="' + id + '"]').addClass('active');
 }
 
-$(document).on('mouseenter', '.scheme-info__item', function() {
+$(document).on('mouseenter', '.scheme-info__item', function () {
 
     activateScheme($(this).data('id'));
 
 });
 
-$(document).on('mouseenter', '.scheme-marker', function() {
+$(document).on('mouseenter', '.scheme-marker', function () {
 
     activateScheme($(this).data('id'));
 
 });
 
-$(document).on('mouseleave', '.scheme-info__item, .scheme-marker', function() {
+$(document).on('mouseleave', '.scheme-info__item, .scheme-marker', function () {
 
     $('.scheme-marker').removeClass('active');
     $('.scheme-info__item').removeClass('active');
 
+});
+
+$('.btn-burger').on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('click');
+    $('.nav-menu').fadeToggle();
+    $('.overlay').fadeToggle();
+});
+
+function initAboutSlider() {
+    if ($(window).width() < 1200) {
+
+        if (!$('.about-slider').hasClass('slick-initialized')) {
+            $('.about-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+                fade: true,
+                infinite: true,
+                prevArrow: `
+        <button type="button" class="events-arrow events-prev about-slider-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 10L14 4L14 16L6 10Z"/>
+</svg>
+
+        </button>
+    `,
+
+                nextArrow: `
+        <button type="button" class="events-arrow events-next about-slider-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 10L10 4L10 16L18 10Z"/>
+</svg>
+
+        </button>
+    `,
+            });
+        }
+
+    } else {
+
+        if ($('.about-slider').hasClass('slick-initialized')) {
+            $('.about-slider').slick('unslick');
+        }
+
+    }
+}
+
+$(document).ready(function () {
+    initAboutSlider();
+});
+
+$(window).on('resize', function () {
+    initAboutSlider();
 });

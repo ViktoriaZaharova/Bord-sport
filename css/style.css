@@ -307,6 +307,10 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   margin: 0;
 }
 
+.btn-group > .btn-group:not(:first-child), .btn-group > :not(.btn-check:first-child) + .btn {
+  margin: 0;
+}
+
 .svg-icon {
   display: inline-block;
   width: 100%;
