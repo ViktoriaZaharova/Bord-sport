@@ -694,6 +694,7 @@
      object-fit: cover;
 }
 .riders-card__img-text {
+  width: 100%;
   position: absolute;
   z-index: 1;
   padding: 40px;
@@ -729,6 +730,9 @@
           align-items: flex-start;
   margin: 0 0 10px;
 }
+.list-information li:last-child {
+  margin: 0;
+}
 .list-information li p {
   min-width: 155px;
   margin: 0 20px 0 0;
@@ -749,8 +753,6 @@
 }
 .list-schedule-line:last-child {
   margin: 0;
-  padding: 0;
-  border: none;
 }
 .list-schedule-line__name {
   font-family: "Akrobat", sans-serif;
