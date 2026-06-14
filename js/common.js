@@ -114,11 +114,7 @@ $('.events-slider').slick({
 });
 
 Fancybox.bind("[data-fancybox='gallery']", {
-    // Your custom v5 options here
-    Infinite: true,
-    Images: {
-        protected: true
-    }
+    
 });
 
 function activateScheme(id) {
