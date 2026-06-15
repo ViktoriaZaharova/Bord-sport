@@ -261,6 +261,46 @@
   .map {
     margin: 10px 0 0;
   }
+  .prices {
+    padding: 24px 0 0;
+  }
+  .price-card {
+    margin: 0 0 24px;
+    padding: 24px;
+  }
+  .price-card h3 {
+    margin: 0;
+  }
+  .price-card.active .price-card__head:after {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .price-card__body {
+    display: none;
+    padding: 40px 0 0;
+  }
+  .price-card__head {
+    position: relative;
+    cursor: pointer;
+    padding-right: 20px;
+  }
+  .price-card__head:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/faq-icon-toggle.svg") no-repeat center;
+    background-size: 100%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .price-card .price {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .list-information {
@@ -335,6 +375,13 @@
   }
 }
 @media only screen and (max-width: 576px) {
+  .btn {
+    height: 59px;
+    padding: 10px 30px;
+  }
+  .btn-phone-call {
+    padding: 10px;
+  }
   .riders-wrapper {
     min-height: auto;
     background: url("../img/rider-img-mobile.png") no-repeat center;
@@ -390,8 +437,29 @@
             order: 1;
     margin: 20px 0 0;
   }
+  .list-information li p {
+    margin: 0;
+    min-width: 145px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  h2, .h2 {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 390px) {
+  h1, .h1 {
+    font-size: 60px;
+  }
+  h2, .h2 {
+    font-size: 24px;
+  }
+  .btn {
+    padding: 10px 25px;
+  }
+  .btn-phone-call {
+    padding: 10px;
+  }
   .nav-menu__footer {
     font-size: 14px;
     margin: 40px 0 0;

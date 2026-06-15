@@ -114,7 +114,7 @@ $('.events-slider').slick({
 });
 
 Fancybox.bind("[data-fancybox='gallery']", {
-    
+
 });
 
 function activateScheme(id) {
@@ -199,3 +199,32 @@ $(document).ready(function () {
 $(window).on('resize', function () {
     initAboutSlider();
 });
+
+
+// mobile accordion
+if ($(window).width() < 992) {
+
+    $('.price-card').each(function (index) {
+
+        const body = $(this).find('.price-card__body');
+
+        if (index !== 0) {
+            body.hide();
+        }
+
+    });
+
+    $('.price-card__head').on('click', function () {
+
+        const card = $(this).closest('.price-card');
+        const body = card.find('.price-card__body');
+
+        $('.price-card__body').not(body).slideUp(400);
+        $('.price-card').not(card).removeClass('active');
+
+        body.stop().slideToggle(400);
+        card.toggleClass('active');
+
+    });
+
+}

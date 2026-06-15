@@ -140,7 +140,8 @@
 }
 
 .about-image {
-  position: relative;
+  position: sticky;
+  top: 10px;
   z-index: 0;
 }
 .about-image__logo {

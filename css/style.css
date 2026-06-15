@@ -133,10 +133,6 @@ body {
   color: #0E1116;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 img {
   display: block;
   max-width: 100%;
