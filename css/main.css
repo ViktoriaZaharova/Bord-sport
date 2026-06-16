@@ -46,21 +46,22 @@
 .text-hightlights p:last-child, .text-hightlights a:last-child, .text-hightlights h3 span:last-child, .text-hightlights .h3 span:last-child, .text-hightlights h4 span:last-child, .text-hightlights .h4 span:last-child {
   margin: 0;
 }
-.text-hightlights h2 {
+.text-hightlights h2, .text-hightlights .h2 {
   color: #fff;
 }
-.text-hightlights h2 span {
+.text-hightlights h2 span, .text-hightlights .h2 span {
   display: block;
   line-height: 110%;
   padding: 9px 12px;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  margin: 0 0 -15px;
+  margin: 0 0 -10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  background: #004F9F;
 }
-.text-hightlights h2 span:last-child {
+.text-hightlights h2 span:last-child, .text-hightlights .h2 span:last-child {
   margin: 0;
 }
 
@@ -505,6 +506,11 @@
 }
 .rules-accordion .faq-question span {
   color: #0E1116;
+}
+
+.rules-image {
+  position: sticky;
+  top: 10px;
 }
 
 .forbidden {

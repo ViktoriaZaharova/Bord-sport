@@ -228,3 +228,8 @@ if ($(window).width() < 992) {
     });
 
 }
+
+$('.list-payments__item').on('click', function () {
+    $('.list-payments__item').removeClass('active');
+    $(this).addClass('active');
+});

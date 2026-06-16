@@ -2673,20 +2673,52 @@
   </footer>
 
   <!-- Modal -->
-  <!-- <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel"
+  <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <div class="modal-title">Modal title</div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body">
           <div class="modal-icon"><img src="img/modal-decor.svg" alt=""></div>
+          <div class="modal-title text-hightlights">
+            <h2 class="h2"><span>Подарите своим близким </span><span>уникальный опыт и яркие </span><span>эмоции</span></h2>
+          </div>
+          <div class="h4 color-blue font-bold">Выберите сумму сертификата</div>
+          <div class="list-payments">
+            <div class="list-payments__item">2 000 ₽</div>
+            <div class="list-payments__item">3 000 ₽</div>
+            <div class="list-payments__item">4 000 ₽</div>
+            <div class="list-payments__item">5 000 ₽</div>
+          </div>
+          <a href="#" class="btn btn-red btn-pay">Оплатить</a>
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
+
+  <div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModallLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="modal-icon"><img src="img/modal-decor.svg" alt=""></div>
+          <div class="modal-title text-hightlights">
+            <h2 class="h2"><span>Записаться</span></h2>
+          </div>
+          <form method="post" class="form">
+            <label>
+              <input type="text" placeholder="Имя" name="name">
+            </label>
+            <label>
+              <input type="text" placeholder="Телефон" name="phone" required>
+            </label>
+            <button type="submit" class="btn btn-red">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
